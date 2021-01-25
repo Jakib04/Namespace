@@ -17,3 +17,10 @@ ip link show veth0
 ```
 
 <img src="Images/2.png" />
+
+```bash
+
+# confirm that veth0 is created
+ip link show veth0
+
+```
