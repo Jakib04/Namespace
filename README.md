@@ -16,4 +16,4 @@ ip link show veth0
 
 ```
 
-<img src="Images/2.png"  />
+<img src="Images/2.png" />
