@@ -7,7 +7,7 @@ ip link add veth0 type veth peer name veth1
 ```
 
 
-<img src="Images/1.png" height="100" />
+<img src="Images/1.png" />
 
 ```bash
 
