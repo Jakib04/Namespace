@@ -83,19 +83,25 @@ Let’s create our first network namespace, vnet0. Then we can assign the veth0 
 # create the vnet0 network namespace
 ip netns add vnet0
 
-# assign the veth0 interface to the vnet0 network namespace
-ip link set veth0 netns vnet0
+# create the vnet1 network namespace
+ip netns add vnet1
+
 
 ```
+<img src="Images/1.png" width="500" height="300" />
+
 
 # Configure the 2nd Network Namespace
 
 We will reuse the above commands to create our second network namespace, vnet1. Then we assign the veth1 interface to this network namespace, 
 
 ```bash
-# create the vnet1 network namespace
-ip netns add vnet1
+# assign the veth0 interface to the vnet0 network namespace
+ip link set veth0 netns vnet0
 
 # assign the veth1 interface to the vnet1 network namespace
 ip link set veth1 netns vnet1
+
 ```
+
+<img src="Images/2.png" width="500" height="300" />
